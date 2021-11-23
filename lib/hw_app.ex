@@ -10,7 +10,6 @@ defmodule HWApp do
 
       iex> HWApp.hello()
       :world
-
   """
   def hello do
     :world

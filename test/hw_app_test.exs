@@ -2,13 +2,8 @@ defmodule HWAppTest do
   use ExUnit.Case
   doctest HWApp
 
-  describe "#hello" do
-    test "when the name of somebody has been passed" do
-      assert HWApp.hello('Name') == "Hello Name!"
-    end
-
-    test "when the name has not been provided" do
-      assert HWApp.hello() == "Hello World!"
-    end
+  # Example. Actually covered in doctest.
+  test "when the name of somebody has been passed" do
+    assert HWApp.hello('Name') == "Hello Name!"
   end
 end

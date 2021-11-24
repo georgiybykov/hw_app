@@ -7,7 +7,12 @@ defmodule HWApp.MixProject do
       version: "0.1.0",
       elixir: "~> 1.12",
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      deps: deps(),
+      test_coverage: [tool: ExCoveralls],
+      preferred_cli_env: [
+        coveralls: :test,
+        "coveralls.detail": :test
+      ]
     ]
   end
 
@@ -20,7 +25,8 @@ defmodule HWApp.MixProject do
   defp deps do
     [
       {:credo, "~> 1.6", only: [:dev, :test], runtime: false},
-      {:credo_contrib, "~> 0.2.0", only: [:dev, :test], runtime: false}
+      {:credo_contrib, "~> 0.2.0", only: [:dev, :test], runtime: false},
+      {:excoveralls, "~> 0.10", only: :test}
     ]
   end
 end

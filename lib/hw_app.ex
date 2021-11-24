@@ -4,14 +4,20 @@ defmodule HWApp do
   """
 
   @doc """
-  Hello world.
+  Greeting for someone
 
-  ## Examples
-
-      iex> HWApp.hello()
-      :world
+    iex> HWApp.hello("Planet")
+    "Hello Planet!"
   """
-  def hello do
-    :world
-  end
+  @spec hello(String.t()) :: String.t()
+  def hello(str), do: "Hello #{str}!"
+
+  @doc """
+  Greeting to the World
+
+    iex> HWApp.hello()
+    "Hello World!"
+  """
+  @spec hello() :: String.t()
+  def hello, do: "Hello World!"
 end

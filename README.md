@@ -1,6 +1,6 @@
 # HWApp [![CI Tests](https://github.com/georgiybykov/hw_app/actions/workflows/ci.yml/badge.svg)](https://github.com/georgiybykov/hw_app/actions)
 
-Hello World application as tutrial one with:
+Hello World application is a tutorial one with:
  - linter;
  - type checking;
  - tests;

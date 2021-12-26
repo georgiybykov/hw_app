@@ -1,4 +1,4 @@
-# HWApp [![CI Tests](https://github.com/georgiybykov/hw_app/actions/workflows/ci.yml/badge.svg)](https://github.com/georgiybykov/hw_app/actions)
+# HWApp [![CI](https://github.com/georgiybykov/hw_app/actions/workflows/ci.yml/badge.svg)](https://github.com/georgiybykov/hw_app/actions)
 
 Hello World application is a tutorial one with:
  - linter;

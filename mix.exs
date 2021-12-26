@@ -5,7 +5,7 @@ defmodule HWApp.MixProject do
     [
       app: :hw_app,
       version: "0.1.0",
-      elixir: "~> 1.12",
+      elixir: "~> 1.13",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       dialyzer: [
@@ -33,7 +33,8 @@ defmodule HWApp.MixProject do
       {:dialyxir, "~> 1.0", only: [:dev, :test], runtime: false},
       {:credo, "~> 1.6", only: [:dev, :test], runtime: false},
       {:credo_contrib, "~> 0.2", only: [:dev, :test], runtime: false},
-      {:excoveralls, "~> 0.10", only: :test}
+      {:excoveralls, "~> 0.10", only: :test},
+      {:ex_doc, "~> 0.24", only: :dev, runtime: false}
     ]
   end
 end
